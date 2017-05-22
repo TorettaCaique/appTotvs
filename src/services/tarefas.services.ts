@@ -12,7 +12,7 @@ export class TarefasService {
         let novaTarefa = { title: "", data: "", id: 0 }
         console.log(tarefa)
         novaTarefa.title = tarefa.title
-        novaTarefa.data = tarefa.data
+        novaTarefa.data = tarefa.data   
         novaTarefa.id = total
         this.tarefas.push(novaTarefa)
         this.storage.set('tarefas', this.tarefas);

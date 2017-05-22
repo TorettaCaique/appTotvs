@@ -10,7 +10,7 @@
 <ion-content padding>
   <ion-list>
       <ion-item  *ngFor="let tarefa of tarefas" (click)='goToPagDet(tarefa)'>
-       <ion-icon name='alarm' item-left></ion-icon>
+       <ion-icon name='attach' item-left></ion-icon>
         <ion-label>
           Nome: {{ tarefa.title }}<br>
           Data: {{ tarefa.data }}
@@ -19,8 +19,13 @@
   </ion-list>
 
   <ion-fab right bottom>
-    <button (click)="itemTapped()" ion-fab color="blue"><ion-icon name="add"></ion-icon></button>
+    <button (click)="itemTapped()" ion-fab mini><ion-icon name="add"></ion-icon></button>
   </ion-fab>
-
+<ion-fab  left bottom>
+    <button (click)="presentActionSheet()" ion-fab mini><ion-icon name="exit"></ion-icon></button>
+  </ion-fab>
+  <ion-fab  center bottom>
+    <button  (click)="goToPagHist()" ion-fab mini><ion-icon name="archive"></ion-icon></button>
+  </ion-fab>
 
 </ion-content>

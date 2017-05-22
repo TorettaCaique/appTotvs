@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-  import { FormBuilder, Validators } from '@angular/forms'
+import { FormBuilder, Validators } from '@angular/forms'
 import { AlertController } from 'ionic-angular'
 import {Home} from '../home/home'
 
@@ -29,7 +29,7 @@ export class LoginPage {
 
 
     if (this.usuario == "admin" && this.senha == "admin") {
-      this.navCtrl.push(Home)
+      this.navCtrl.setRoot(Home)
       
     }
 

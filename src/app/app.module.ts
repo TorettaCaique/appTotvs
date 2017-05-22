@@ -12,6 +12,7 @@ import {Home} from '../pages/home/home';
 import {Detalhes} from '../pages/detalhes/detalhes'
 import { PagAdd } from '../pages/pag-add/pag-add';
 import {TarefasService} from "../services/tarefas.services"
+import {Historico} from "../pages/historico/historico"
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {TarefasService} from "../services/tarefas.services"
     LoginPage,
     Home,
     PagAdd,
-    Detalhes
+    Detalhes,
+    Historico
     
     
   ],
@@ -36,7 +38,8 @@ import {TarefasService} from "../services/tarefas.services"
     LoginPage,
     Home,
     PagAdd,
-    Detalhes
+    Detalhes,
+    Historico
     
   ],
   providers: [
