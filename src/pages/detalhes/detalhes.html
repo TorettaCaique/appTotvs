@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <ion-list>
+
+    <ion-item>Nome: {{ tarefa.title }}<br>Data: {{ tarefa.data }}</ion-item>
+    
+    
+    <button ion-button full color="primary" (click)='deleteArray()'>Finalizar Tarefa</button>
+    <button ion-button full color='primary' (click)='naoRealizada()'>Não realizada</button>
+  </ion-list>
+</ion-content>

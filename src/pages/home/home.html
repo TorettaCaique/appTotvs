@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Tarefas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-item  *ngFor="let tarefa of tarefas" (click)='goToPagDet(tarefa)'>
+       <ion-icon name='alarm' item-left></ion-icon>
+        <ion-label>
+          Nome: {{ tarefa.title }}<br>
+          Data: {{ tarefa.data }}
+        </ion-label>
+      </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button (click)="itemTapped()" ion-fab color="blue"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+
+</ion-content>
